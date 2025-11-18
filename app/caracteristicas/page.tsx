@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 
 export default function page() {
@@ -19,14 +20,14 @@ export default function page() {
 
   return (
     <div>
-    <h2>Características do React e Next.js</h2>
-    <ul>
+    <h2 className='text-gray-700'>Características do React e Next.js</h2>
+    <ul className='text-gray-600'>
         {caracteristicas.map((caracteristicas, i) => {
             return <li key={i}>{caracteristicas}</li>
         })}
     </ul>
 
-    <button onClick={clickar}>Carrega aqui</button>
+    <button className ="text-gray-600 border-1 bg-gray-300" onClick={clickar}>Carrega aqui</button>
     </div>
   )
 }

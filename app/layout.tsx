@@ -33,7 +33,8 @@ export default function RootLayout({
           <nav className ="flex gap-4">
             <Link href="/">Intro</Link>
             <Link href="/sobre">Sobre</Link>
-            <Link href="/carac"></Link>
+            <Link href="/tecnologias">Tecnologias</Link>
+            <Link href="/caracteristicas">Características</Link>
           </nav>
         </header>
 
