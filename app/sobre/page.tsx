@@ -1,8 +1,8 @@
-export default function Page() {
+export default function SobrePage() {
     return (
         <>
-        <h2 className="text-gray-700">Desenvolvimento Web Moderno</h2>
-        <ul className="text-gray-600">
+        <h2 className="text-gray-300">Desenvolvimento Web Moderno</h2>
+        <ul className="text-white">
             <li>React e Next.js revolucionaram a criação de interfaces web.</li>
             <li>São usados por empresas como Facebook, Netflix e Airbnb.</li>
             <li>Dominar estas tecnologias abre muitas oportunidades!</li>
