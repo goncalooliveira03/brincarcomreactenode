@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Relogio from "@/components/MagiaDoJSX/Relogio";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,8 @@ export default function RootLayout({
             <Link href="/tecnologias">Tecnologias</Link>
             <Link href="/caracteristicas">Características</Link>
             <Link href="/projetos">Projetos</Link>
+            <Link href="/contador">Contador</Link>
+            <Link href="/input">Input</Link>
           </nav>
         </header>
 
@@ -43,7 +46,13 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer>{data.getFullYear()}</footer>
+        <footer className="mt-10 text-gray-500 flex flex-col items-center gap-2">
+            <p>&copy; {data.getFullYear()} - Gonçalo Oliveira</p>
+            
+            {}
+            <Relogio />
+        </footer>
+
 
       </body>
     </html>
