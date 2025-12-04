@@ -16,9 +16,8 @@ export default function ProdutosPage() {
   
   const [loading, setLoading] = useState(true);
 
-  // 1. Carregar dados da API ao iniciar
   useEffect(() => {
-    // Usamos Promise.all para fazer os dois pedidos ao mesmo tempo
+
     Promise.all([
       fetch('https://deisishop.pythonanywhere.com/products').then(res => res.json()),
       fetch('https://deisishop.pythonanywhere.com/categories').then(res => res.json())
@@ -34,9 +33,8 @@ export default function ProdutosPage() {
     });
   }, []);
 
-  // 2. Função de Compra (Simulação)
   const buyProduct = (product: Product) => {
-    // No futuro, aqui farás o POST /buy
+
     alert(`Produto adicionado ao carrinho: ${product.title}`);
   };
 
@@ -60,10 +58,10 @@ export default function ProdutosPage() {
         Loja DEISI Shop
       </h1>
 
-      {/* --- ÁREA DE FILTROS --- */}
+      {}
       <div className="bg-gray-800 p-6 rounded-xl shadow-lg mb-8">
         
-        {/* Barra de Pesquisa */}
+        {}
         <div className="mb-6">
           <input 
             type="text"
@@ -74,7 +72,7 @@ export default function ProdutosPage() {
           />
         </div>
 
-        {/* Botões de Categorias */}
+        {}
         <div className="flex flex-wrap gap-2 justify-center">
           <button
             onClick={() => setSelectedCategory("Todas")}
@@ -103,7 +101,7 @@ export default function ProdutosPage() {
         </div>
       </div>
 
-      {/* --- GRELHA DE PRODUTOS --- */}
+      {}
       {filteredProducts.length === 0 ? (
         <div className="text-center text-gray-400 py-10">
           <p className="text-xl">Nenhum produto encontrado.</p>
