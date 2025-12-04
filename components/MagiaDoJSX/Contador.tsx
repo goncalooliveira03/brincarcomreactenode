@@ -9,7 +9,7 @@ export default function Contador() {
 
   // 2. Carregar dados do localStorage ao iniciar a página
   useEffect(() => {
-    // Verificar se existe algo guardado
+    
     const valorGuardado = localStorage.getItem("contadorValor");
     const historicoGuardado = localStorage.getItem("contadorHistorico");
 
