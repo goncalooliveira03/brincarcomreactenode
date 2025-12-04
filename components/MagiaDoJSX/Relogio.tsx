@@ -7,19 +7,16 @@ export default function Relogio() {
   const [hora, setHora] = useState<string>("");
 
   useEffect(() => {
-    // Função para atualizar a hora
+    
     const atualizarTempo = () => {
       const agora = new Date();
       // Formata a hora como HH:MM:SS
       setHora(agora.toLocaleTimeString("pt-PT"));
     };
 
-    // Atualiza imediatamente ao carregar
     atualizarTempo();
 
   }, []);
-
-  if (!hora) return null; // Recomendação do Gemini (Se a hora ainda não carregou (durante o render inicial), não mostra nada para evitar erros de hidratação)
 
   return (
     <div className="mt-2 font-mono text-sm bg-gray-900 text-green-400 p-2 rounded border border-gray-700 shadow-sm inline-block">
