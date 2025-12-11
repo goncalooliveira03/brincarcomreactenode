@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'deisishop.pythonanywhere.com',
         port: '',
-        pathname: '/media/**',
+        pathname: '/media/**', 
       },
     ],
   },
