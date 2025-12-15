@@ -41,7 +41,7 @@ export default function ProdutosPage() {
     alert(`Compraste: ${produto.title}`);
   };
 
-  // Filtragem
+  // Filtragemm
   const produtosFiltrados = products.filter(produto => {
     const categoriaCorreta = selectedCategory === "Todas" || produto.category === selectedCategory;
     const pesquisaCorreta = produto.title.toLowerCase().includes(search.toLowerCase());
